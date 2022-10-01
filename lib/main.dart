@@ -9,11 +9,14 @@ class TryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String name = "for flutter tuorial";
+
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Material(
         child: Center(
           child: Container(
-            child: Text("It's just a try"),
+            child: Text("It's just a try $name"),
           ),
         ),
       ),
